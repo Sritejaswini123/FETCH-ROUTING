@@ -11,6 +11,7 @@ import BlogItemDetails from './Components/BlogItemDetails';
 
 import './App.css';
 import { BrowserRouter  , Link, Routes, Route } from "react-router-dom";
+import UserInfo from './Components/UserInfo';
 
 
 const App = () => {
@@ -19,7 +20,9 @@ const App = () => {
       <BrowserRouter>
       <Header/>
      <Routes>
+      
       <Route  path="/" element={<Home/>} />
+      <Route path = "/userinfo" element = {<UserInfo/>}/>
       <Route  path="/about" element={<About/>} />
       <Route  path="/contact" element={<Contact/>} />
       <Route path = "/blogs/:id" element = {<BlogItemDetails/>} />
